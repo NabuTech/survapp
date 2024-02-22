@@ -1,9 +1,73 @@
-<!-- templates/index.html -->
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}Home Page{% endblock %}
 
 {% block content %}
-    <h1>Welcome to Your Django Project</h1>
-    <!-- Your specific content goes here -->
+    <div class="container mt-5">
+        <div class="jumbotron">
+            <img src="{% static 'images/jumbotron.jpg' %}" alt="Survey" style="width: 100%; height: 200px;">
+            <p class="lead">Empower your projects with industry-standard surveys for Mobile apps, Web Applications, Desktop, Enterprise or Cloud-Based and more.</p>
+            <hr class="my-4">
+            <p>SurvApp provides a robust platform to design surveys aligned with global standards, ensuring excellence in software development. Tailored templates for various domains streamline your survey creation process, promoting efficiency and precision.</p>
+            <div class="mt-3">
+                <a class="btn btn-outline-primary" href="#">Login</a>
+            </div>
+        </div>
+    </div>
+    <!-- Functionality Section -->
+    <section class="mt-5">
+        <h2 class="text-center mb-4">Key Features</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Versatile Survey Creation</h5>
+                        <p class="card-text">Design surveys for various domains with ease.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">User Authentication & Authorization</h5>
+                        <p class="card-text">Secure and tailored experience for different user levels.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Multi-Format Export Options</h5>
+                        <p class="card-text">Save templates in various formats for future use.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+    <section class="mt-5">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Free Account</h5>
+                        <p class="card-text">Access to pre-designed survey forms</p>
+                        <a href="#" class="btn btn-primary">Sign Up for Free</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Member Account</h5>
+                        <p class="card-text">Custom design survey forms</p>
+                        <a href="#" class="btn btn-success">Join as a Member</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
 {% endblock %}
